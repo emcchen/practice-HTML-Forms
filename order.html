@@ -33,28 +33,48 @@
     <h2>Order Form</h2>
     <form>
         <div>
-            Your name <input type="text" name="name">
+            <label>Your name</label>
+            <input type="text" name="name">
         </div>
+
         <div>
-            Who are we sending this to? <input type="text" name="recipient">
+            <label>Who are we sending this to? </label>
+            <input type="text" name="recipient">
         </div>
+
         <div>
-            Choose a melon
+            <label>Choose a melon</label>
             <select name="melon">
                 <option value="watermelon">Watermelon</option>
                 <option value="canteloupe">Canteloupe</option>
                 <option value="honeydew">Honeydew</option>
             </select>
         </div>
+
         <div>
-            When should we deliver?
-            <input type="radio" name="time" value="am"> Morning
-            <input type="radio" name="time" value="pm"> Evening
-            <input type="radio" name="time" value="any"> Any time
+            <fieldset>
+                <legend>When should we deliver?</legend>
+
+                <div>
+                    <input type="radio" name="time" value="am" id="am"> 
+                    <label for="am">Morning</label>
+                </div>
+                <div>
+                    <input type="radio" name="time" value="pm" id="pm">
+                    <label for="pm">Evening</label>
+                </div>
+                <div>
+                    <input type="radio" name="time" value="any" id="any">
+                    <label for="any">Any time</label>
+                </div>
+            </fieldset>
         </div>
+        
         <div>
-            Enter your message:
-            <textarea name="message"></textarea>
+            <p>
+                Enter your message:
+            </p>
+                <textarea name="message"></textarea>
         </div>
         <div>
             Subscribe to our newsletter
